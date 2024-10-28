@@ -1,0 +1,21 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity FULL_SUB is
+	port (
+		in_A: in std_logic;
+		in_B: in std_logic;
+		in_bin: in std_logic;
+		clk: in std_logic;
+		out_s: out std_logic;
+		out_bout: out std_logic);
+	end FULL_SUB;
+
+architecture behavioral of FULL_SUB is
+
+component D_FF
+	port (D,clk: in std_logic;
+			Q: out std_logic);
+end component;
+	
+signal a,

@@ -1,0 +1,41 @@
+architecture behavior of LED_function_testbench is
+
+	component LED_function --Component declaration
+	port(
+		SW1 : in bit;
+		SW2 : in bit;
+		SW3 : in bit;
+		LED : outbit
+		);
+	end component;
+	
+	--Inputs
+	signal SW1 : bit :='0';
+	signal SW2 : bit :='0';
+	signal SW3 : bit :='0';
+	--Outputs
+	signal LED : bit;
+
+begin
+	-- Instantiate the Unit Under Test (UUT)
+	uut: LED_function port map (
+		SW1 => SW1,
+		SW2 => SW2,
+		SW3 => SW3,
+		LED => LED
+	);
+
+	stim_proc: process -- Stimulus process
+	begin
+		-- Stimulus
+		SW1 <='0'; SW2 <='0'; SW2 <='0'; wait for 10ns;
+		SW1 <='0'; SW2 <='0'; SW2 <='1'; wait for 10ns;
+		SW1 <='0'; SW2 <='1'; SW2 <='0'; wait for 10ns;
+		SW1 <='0'; SW2 <='1'; SW2 <='1'; wait for 10ns;
+		SW1 <='1'; SW2 <='0'; SW2 <='0'; wait for 10ns;
+		SW1 <='1'; SW2 <='0'; SW2 <='1'; wait for 10ns;
+		SW1 <='1'; SW2 <='1'; SW2 <='0'; wait for 10ns;
+		SW1 <='1'; SW2 <='1'; SW2 <='1'; wait for 10ns;
+		wait;
+	end process;
+END;

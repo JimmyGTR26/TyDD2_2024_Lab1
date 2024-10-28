@@ -1,0 +1,15 @@
+|LED_function_block
+LED <= LED_function:inst.LED
+SW1 => LED_function:inst.SW1
+SW2 => LED_function:inst.SW2
+SW3 => LED_function:inst.SW3
+
+
+|LED_function_block|LED_function:inst
+SW1 => LED.IN0
+SW2 => LED.IN1
+SW2 => LED.IN0
+SW3 => LED.IN1
+LED <= LED.DB_MAX_OUTPUT_PORT_TYPE
+
+

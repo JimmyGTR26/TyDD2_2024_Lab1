@@ -1,0 +1,75 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\santi\OneDrive\Escritorio\Laboratorio 1\Parte A\simulation\modelsim
+Eled_function
+Z1 w1729644624
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\santi\OneDrive\Escritorio\Laboratorio 1\Parte A\simulation\modelsim
+Z5 8C:/Users/santi/OneDrive/Escritorio/Laboratorio 1/Parte A/LED_function.vhd
+Z6 FC:/Users/santi/OneDrive/Escritorio/Laboratorio 1/Parte A/LED_function.vhd
+l0
+L4
+VknmQKFFknlmYJ=V^FY1=22
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1729646188.849000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/santi/OneDrive/Escritorio/Laboratorio 1/Parte A/LED_function.vhd|
+Z10 !s107 C:/Users/santi/OneDrive/Escritorio/Laboratorio 1/Parte A/LED_function.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 _>dFFXgM4nDMiBAF71^SE1
+!i10b 1
+Abehavioral
+R2
+R3
+DEx4 work 12 led_function 0 22 knmQKFFknlmYJ=V^FY1=22
+l10
+L9
+VBI>ocaEYUDWK^QaP=jF>Z0
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 _OOXe;<d=JeI86KgA^FN?2
+!i10b 1
+Eled_function_testbench
+Z13 w1729646139
+R2
+R3
+R4
+Z14 8C:/Users/santi/OneDrive/Escritorio/Laboratorio 1/Parte A/LED_function_testbench.vhd
+Z15 FC:/Users/santi/OneDrive/Escritorio/Laboratorio 1/Parte A/LED_function_testbench.vhd
+l0
+L4
+VFMBDVin[?6?9@8QU7PmF?1
+!s100 VB<mlVeWb=FhUhi6607[e1
+R7
+31
+!i10b 1
+Z16 !s108 1729646188.936000
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/santi/OneDrive/Escritorio/Laboratorio 1/Parte A/LED_function_testbench.vhd|
+Z18 !s107 C:/Users/santi/OneDrive/Escritorio/Laboratorio 1/Parte A/LED_function_testbench.vhd|
+R11
+R12
+Abehavior
+R2
+R3
+DEx4 work 22 led_function_testbench 0 22 FMBDVin[?6?9@8QU7PmF?1
+l25
+L7
+V_>aNdPG>^2hVSS9Iek24m1
+!s100 <4XzeTWnCV>]mi1Qcc3=U0
+R7
+31
+!i10b 1
+R16
+R17
+R18
+R11
+R12
