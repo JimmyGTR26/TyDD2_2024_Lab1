@@ -1,0 +1,57 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL; -- Para operaciones aritméticas
+use IEEE.STD_LOGIC_UNSIGNED.ALL; -- Para operaciones sin signo
+
+entity Divisor is
+    Port (
+        A : in STD_LOGIC_VECTOR(5 downto 0);  -- Entrada A en formato (4,2)
+        B : in STD_LOGIC_VECTOR(5 downto 0);  -- Entrada B en formato (3,3)
+        cociente_final : out STD_LOGIC_VECTOR(11 downto 0)  -- Salida del cociente final en formato (7,5)
+    );
+end Divisor;
+
+architecture Behavioral of Divisor is
+    signal A_shifted : STD_LOGIC_VECTOR(5 downto 0);  -- 6 bits para A desplazado
+    signal A_int : INTEGER;  -- Variable para almacenar el valor entero de A
+    signal B_int : INTEGER;  -- Variable para almacenar el valor entero de B
+    signal cociente : INTEGER := 0;  -- Variable para almacenar el cociente
+    signal resto : INTEGER := 0;      -- Variable para almacenar el resto
+    signal parte_entera_bin : STD_LOGIC_VECTOR(6 downto 0);  -- 7 bits para la parte entera
+    signal parte_fracc : INTEGER := 0;   -- Variable para almacenar la parte fraccionaria
+begin
+    A_shifted <= A & "0";  -- Añadir un cero a la derecha
+    A_int <= to_integer(unsigned(A_shifted));  -- Convertir A a entero sin signo
+    B_int <= to_integer(unsigned(B));  -- Convertir B a entero sin signo
+
+    -- Inicializamos el resto con el valor de A_int
+    resto <= A_int;
+
+    -- Loop de restas sucesivas
+    process(A_int, B_int)
+    begin
+        cociente <= 0;  -- Reiniciar el cociente antes de comenzar el bucle
+        resto <= A_int; -- Asignar el valor de A_int al resto inicial
+
+        while resto >= B_int loop
+            resto <= resto - B_int;  -- Restar B_int del resto
+            cociente <= cociente + 1; -- Incrementar el contador de cociente
+        end loop;
+    end process;
+
+    -- Asignar la parte entera en binario
+    parte_entera_bin <= std_logic_vector(to_unsigned(cociente, parte_entera_bin'length));
+
+    -- Cálculo de la parte fraccionaria
+    process(cociente, resto, B_int)
+    begin
+        parte_fracc <= (resto * 32) / B_int;  -- Multiplicar el resto por 32 (2^5) para obtener 5 bits fraccionarios
+    end process;
+
+    -- Combinar parte entera y parte fraccionaria en el cociente final
+    process(parte_entera_bin, parte_fracc)
+    begin
+        cociente_final <= parte_entera_bin & std_logic_vector(to_unsigned(parte_fracc, 5)); -- Concatenar ambas partes
+    end process;
+
+end Behavioral;

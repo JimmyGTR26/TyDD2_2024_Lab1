@@ -1,0 +1,62 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Divisor_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/santi/OneDrive/Escritorio/Laboratorio 1/Parte F/Divisor.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity divisor
+# -- Compiling architecture behavioral of divisor
+# 
+# vcom -93 -work work {C:/Users/santi/OneDrive/Escritorio/Laboratorio 1/Parte F/Divisor_testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Divisor_testbench
+# -- Compiling architecture behavioral of Divisor_testbench
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiii -L rtl_work -L work -voptargs="+acc"  Divisor_testbench
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps Divisor_testbench 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.divisor_testbench(behavioral)
+# Loading work.divisor(behavioral)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Error: (vsim-86) Arg Value -2147483648 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 0  Instance: /divisor_testbench/uut
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /divisor_testbench/uut
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /divisor_testbench/uut
+# ** Error: (vsim-86) Arg Value -2147483647 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 1  Instance: /divisor_testbench/uut
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 0 ps  Iteration: 1  Instance: /divisor_testbench/uut
+# ** Fatal: (vsim-3977) Integer divide by zero.
+#    Time: 0 ps  Iteration: 1  Process: /divisor_testbench/uut/line__43 File: C:/Users/santi/OneDrive/Escritorio/Laboratorio 1/Parte F/Divisor.vhd
+# Fatal error in Architecture behavioral at C:/Users/santi/OneDrive/Escritorio/Laboratorio 1/Parte F/Divisor.vhd line 43
+# 
+# HDL call sequence:
+# Stopped at C:/Users/santi/OneDrive/Escritorio/Laboratorio 1/Parte F/Divisor.vhd 43 Architecture behavioral
+# 

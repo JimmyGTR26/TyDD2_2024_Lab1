@@ -14,6 +14,6 @@ entity FULL_SUB is
 architecture behavioral of FULL_SUB is
 
 begin
-		s <= ((not(in_A)) and (not(in_B)) and in_bin)  or  ((not(in_A)) and in_B and (not(in_bin)))  or  (in_A and in_B and in_bin)  or  (in_A and (not(in_B)) and (not(in_bin)));
-		bout <= ((not(in_A)) and in_B)  or  ((not(in_A)) and in_bin)  or (in_B and in_bin);
-end behavioral
+		o_s <= ((not(in_A)) and (not(in_B)) and in_bin)  or  ((not(in_A)) and in_B and (not(in_bin)))  or  (in_A and in_B and in_bin)  or  (in_A and (not(in_B)) and (not(in_bin)));
+		o_bout <= ((not(in_A)) and in_B)  or  ((not(in_A)) and in_bin)  or (in_B and in_bin);
+end behavioral;

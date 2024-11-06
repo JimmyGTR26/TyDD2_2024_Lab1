@@ -1,0 +1,81 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity I2C_Controller is
+    Port (
+        clk         : in std_logic;
+        reset       : in std_logic;
+        SDA         : in std_logic;
+        fin_dato    : in std_logic;
+        fin_dir     : in std_logic;
+        soy         : in std_logic;     -- soy=1 indica que la dirección es correcta
+        enable_dir  : out std_logic;    -- habilitación de transmisión de dirección
+        enable_data : out std_logic;    -- habilitación de transmisión de dato
+        ack         : out std_logic     -- señal de ACK (acknowledge)
+    );
+end I2C_Controller;
+
+architecture Behavioral of I2C_Controller is
+    type state_type is (idle, start, save_direction, R_W, ack_state, save_data);
+    signal state, next_state : state_type;
+
+begin
+    -- Proceso de transición de estados
+    process(clk, reset)
+    begin
+        if reset = '1' then
+            state <= idle;
+        elsif rising_edge(clk) then
+            state <= next_state;
+        end if;
+    end process;
+
+    -- Lógica de transición de estados
+    process(state, SDA, fin_dato, fin_dir, soy)
+    begin
+        -- Valores por defecto de salidas
+        enable_dir   <= '0';
+        enable_data  <= '0';
+        ack          <= '0';
+        next_state   <= state;  -- Valor por defecto para evitar latch
+
+        case state is
+            when idle =>
+                if SDA = '0' then               -- Espera que SDA sea 0 para iniciar
+                    next_state <= start;
+                end if;
+
+            when start =>
+                next_state <= save_direction;   -- Transición directa a save_direction
+
+            when save_direction =>
+                enable_dir <= '1';              -- Activar habilitación de dirección
+                if fin_dir = '1' then
+                    if soy = '1' then           -- Si la dirección es correcta
+                        next_state <= R_W;
+                    else
+                        next_state <= idle;     -- Si soy es 0, volver a idle
+                    end if;
+                end if;
+
+            when R_W =>
+                enable_dir <= '0';              -- Desactivar enable_dir
+                next_state <= ack_state;        -- Transición directa al estado ACK
+
+            when ack_state =>
+                ack <= '1';                     -- Activar la señal ACK
+                next_state <= save_data;        -- Pasar al estado SAVE DATA
+
+            when save_data =>
+                enable_data <= '1';             -- Activar habilitación de dato
+                ack <= '0';                     -- Desactivar ACK
+                if fin_dato = '1' then
+                    next_state <= idle;         -- Volver a idle una vez terminado el dato
+                end if;
+
+            when others =>
+                next_state <= idle;
+        end case;
+    end process;
+end Behavioral;

@@ -61,5 +61,13 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
+add wave -position insertpoint  \
+sim:/full_sub_testbench/clk \
+sim:/full_sub_testbench/clock_period \
+sim:/full_sub_testbench/in_A \
+sim:/full_sub_testbench/in_B \
+sim:/full_sub_testbench/in_bin \
+sim:/full_sub_testbench/o_bout \
+sim:/full_sub_testbench/o_s
 # Break key hit 
-# Break in Process clock_process at C:/Users/santi/OneDrive/Escritorio/Laboratorio 1/Parte B/FULL_SUB_testbench.vhd line 47
+# Simulation stop requested.

@@ -1,0 +1,44 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity Divisor_testbench is
+end Divisor_testbench;
+
+architecture behavioral of Divisor_testbench is
+    -- Component declaration for the Unit Under Test (UUT)
+    component Divisor
+        Port (
+            A : in STD_LOGIC_VECTOR(5 downto 0);  -- Entrada A en formato (4,2)
+            B : in STD_LOGIC_VECTOR(5 downto 0);  -- Entrada B en formato (3,3)
+            Q : out STD_LOGIC_VECTOR(11 downto 0)  -- Salida del cociente final en formato (7,5)
+        );
+    end component;
+
+    -- Signals for connecting to the UUT
+    signal A : STD_LOGIC_VECTOR(5 downto 0) := "000000";  -- A inicializado en 0
+    signal B : STD_LOGIC_VECTOR(5 downto 0) := "000000";  -- B inicializado en 0
+    signal Q : STD_LOGIC_VECTOR(11 downto 0);             -- Salida del cociente
+
+begin
+    -- Instantiate the Unit Under Test (UUT)
+    uut: Divisor
+        Port map (
+            A => A,
+            B => B,
+            Q => Q
+        );
+
+    -- Test process
+    test_process: process
+    begin
+        -- Test case with A = 15 and B = 2.5
+        A <= "111100";  -- A = 15 en formato (4,2)
+        B <= "010100";  -- B = 2.5 en formato (3,3)
+        wait for 10 ns;
+        report "Test case: A = 15, B = 2.5, Expected Q = 6.000 (6,0)";
+        
+        -- Finalization
+        wait;
+    end process;
+end behavioral;

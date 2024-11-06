@@ -1,0 +1,79 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\santi\OneDrive\Escritorio\Laboratorio 1\Parte F\simulation\modelsim
+Edivisor
+Z1 w1730844962
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\santi\OneDrive\Escritorio\Laboratorio 1\Parte F\simulation\modelsim
+Z6 8C:/Users/santi/OneDrive/Escritorio/Laboratorio 1/Parte F/Divisor.vhd
+Z7 FC:/Users/santi/OneDrive/Escritorio/Laboratorio 1/Parte F/Divisor.vhd
+l0
+L5
+VnG`Z<LEKc1NAn]JA1V5f91
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1730928954.213000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/santi/OneDrive/Escritorio/Laboratorio 1/Parte F/Divisor.vhd|
+Z11 !s107 C:/Users/santi/OneDrive/Escritorio/Laboratorio 1/Parte F/Divisor.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 4jTCaO`MfF;0`QeAk_3jA1
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+DEx4 work 7 divisor 0 22 nG`Z<LEKc1NAn]JA1V5f91
+l22
+L13
+V1DEh>MmkL:[amHBoLjjY02
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 @>kA;[^`]Oh_dgR4_26aM3
+!i10b 1
+Edivisor_testbench
+Z14 w1730928842
+R2
+R3
+R4
+R5
+Z15 8C:/Users/santi/OneDrive/Escritorio/Laboratorio 1/Parte F/Divisor_testbench.vhd
+Z16 FC:/Users/santi/OneDrive/Escritorio/Laboratorio 1/Parte F/Divisor_testbench.vhd
+l0
+L5
+Vm`S`gGccYl=OLA1l^zTDa0
+!s100 3WB=UbP0KiE=SgfleYfdn0
+R8
+31
+!i10b 1
+Z17 !s108 1730928954.278000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/santi/OneDrive/Escritorio/Laboratorio 1/Parte F/Divisor_testbench.vhd|
+Z19 !s107 C:/Users/santi/OneDrive/Escritorio/Laboratorio 1/Parte F/Divisor_testbench.vhd|
+R12
+R13
+Abehavioral
+R2
+R3
+R4
+DEx4 work 17 divisor_testbench 0 22 m`S`gGccYl=OLA1l^zTDa0
+l23
+L8
+Vh5bT`JA49_B9bMkK7;T]J2
+!s100 e7V>ho:B?FSAUcFdDVKam3
+R8
+31
+!i10b 1
+R17
+R18
+R19
+R12
+R13

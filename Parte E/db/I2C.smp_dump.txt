@@ -1,0 +1,9 @@
+
+State Machine - |I2C_Controller|state
+Name state.SAVE_DATA state.ACK_STATE state.R_W state.SAVE_DIR state.START state.IDLE 
+state.IDLE 0 0 0 0 0 0 
+state.START 0 0 0 0 1 1 
+state.SAVE_DIR 0 0 0 1 0 1 
+state.R_W 0 0 1 0 0 1 
+state.ACK_STATE 0 1 0 0 0 1 
+state.SAVE_DATA 1 0 0 0 0 1 

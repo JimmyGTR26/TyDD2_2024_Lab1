@@ -1,0 +1,208 @@
+|4bit_FULL_SUB
+in_bin => d_ff:b2v_inst12.D
+clk => full_sub:b2v_inst.clk
+clk => d_ff:b2v_inst1.clk
+clk => d_ff:b2v_inst10.clk
+clk => d_ff:b2v_inst11.clk
+clk => d_ff:b2v_inst12.clk
+clk => d_ff:b2v_inst13.clk
+clk => d_ff:b2v_inst14.clk
+clk => d_ff:b2v_inst15.clk
+clk => d_ff:b2v_inst16.clk
+clk => d_ff:b2v_inst17.clk
+clk => full_sub:b2v_inst2.clk
+clk => full_sub:b2v_inst3.clk
+clk => full_sub:b2v_inst4.clk
+clk => d_ff:b2v_inst5.clk
+clk => d_ff:b2v_inst6.clk
+clk => d_ff:b2v_inst7.clk
+clk => d_ff:b2v_inst8.clk
+clk => d_ff:b2v_inst9.clk
+in_A0 => d_ff:b2v_inst1.D
+in_B0 => d_ff:b2v_inst8.D
+in_A1 => d_ff:b2v_inst5.D
+in_B1 => d_ff:b2v_inst9.D
+in_A2 => d_ff:b2v_inst6.D
+in_B2 => d_ff:b2v_inst10.D
+in_A3 => d_ff:b2v_inst7.D
+in_B3 => d_ff:b2v_inst11.D
+o_s3 <= d_ff:b2v_inst14.Q
+o_s2 <= d_ff:b2v_inst15.Q
+o_s1 <= d_ff:b2v_inst16.Q
+o_s0 <= d_ff:b2v_inst17.Q
+o_bout4 <= d_ff:b2v_inst13.Q
+Z <= Z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4bit_FULL_SUB|FULL_SUB:b2v_inst
+in_A => o_s.IN0
+in_A => o_s.IN0
+in_A => o_s.IN0
+in_A => o_s.IN0
+in_A => o_bout.IN0
+in_B => o_s.IN1
+in_B => o_s.IN1
+in_B => o_bout.IN0
+in_B => o_s.IN1
+in_B => o_s.IN1
+in_bin => o_s.IN1
+in_bin => o_s.IN1
+in_bin => o_bout.IN1
+in_bin => o_bout.IN1
+in_bin => o_s.IN1
+in_bin => o_s.IN1
+clk => ~NO_FANOUT~
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_bout <= o_bout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4bit_FULL_SUB|D_FF:b2v_inst1
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4bit_FULL_SUB|D_FF:b2v_inst10
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4bit_FULL_SUB|D_FF:b2v_inst11
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4bit_FULL_SUB|D_FF:b2v_inst12
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4bit_FULL_SUB|D_FF:b2v_inst13
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4bit_FULL_SUB|D_FF:b2v_inst14
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4bit_FULL_SUB|D_FF:b2v_inst15
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4bit_FULL_SUB|D_FF:b2v_inst16
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4bit_FULL_SUB|D_FF:b2v_inst17
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4bit_FULL_SUB|FULL_SUB:b2v_inst2
+in_A => o_s.IN0
+in_A => o_s.IN0
+in_A => o_s.IN0
+in_A => o_s.IN0
+in_A => o_bout.IN0
+in_B => o_s.IN1
+in_B => o_s.IN1
+in_B => o_bout.IN0
+in_B => o_s.IN1
+in_B => o_s.IN1
+in_bin => o_s.IN1
+in_bin => o_s.IN1
+in_bin => o_bout.IN1
+in_bin => o_bout.IN1
+in_bin => o_s.IN1
+in_bin => o_s.IN1
+clk => ~NO_FANOUT~
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_bout <= o_bout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4bit_FULL_SUB|FULL_SUB:b2v_inst3
+in_A => o_s.IN0
+in_A => o_s.IN0
+in_A => o_s.IN0
+in_A => o_s.IN0
+in_A => o_bout.IN0
+in_B => o_s.IN1
+in_B => o_s.IN1
+in_B => o_bout.IN0
+in_B => o_s.IN1
+in_B => o_s.IN1
+in_bin => o_s.IN1
+in_bin => o_s.IN1
+in_bin => o_bout.IN1
+in_bin => o_bout.IN1
+in_bin => o_s.IN1
+in_bin => o_s.IN1
+clk => ~NO_FANOUT~
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_bout <= o_bout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4bit_FULL_SUB|FULL_SUB:b2v_inst4
+in_A => o_s.IN0
+in_A => o_s.IN0
+in_A => o_s.IN0
+in_A => o_s.IN0
+in_A => o_bout.IN0
+in_B => o_s.IN1
+in_B => o_s.IN1
+in_B => o_bout.IN0
+in_B => o_s.IN1
+in_B => o_s.IN1
+in_bin => o_s.IN1
+in_bin => o_s.IN1
+in_bin => o_bout.IN1
+in_bin => o_bout.IN1
+in_bin => o_s.IN1
+in_bin => o_s.IN1
+clk => ~NO_FANOUT~
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_bout <= o_bout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4bit_FULL_SUB|D_FF:b2v_inst5
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4bit_FULL_SUB|D_FF:b2v_inst6
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4bit_FULL_SUB|D_FF:b2v_inst7
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4bit_FULL_SUB|D_FF:b2v_inst8
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4bit_FULL_SUB|D_FF:b2v_inst9
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

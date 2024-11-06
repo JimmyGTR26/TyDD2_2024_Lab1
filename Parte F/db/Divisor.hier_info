@@ -1,0 +1,39 @@
+|Divisor
+A[0] => resto.DATAA
+A[1] => resto.DATAA
+A[2] => resto.DATAA
+A[3] => resto.DATAA
+A[4] => resto.DATAA
+A[5] => resto.DATAA
+B[0] => LessThan0.IN32
+B[0] => Div0.IN36
+B[0] => Add1.IN32
+B[1] => LessThan0.IN31
+B[1] => Div0.IN35
+B[1] => Add1.IN31
+B[2] => LessThan0.IN30
+B[2] => Div0.IN34
+B[2] => Add1.IN30
+B[3] => LessThan0.IN29
+B[3] => Div0.IN33
+B[3] => Add1.IN29
+B[4] => LessThan0.IN28
+B[4] => Div0.IN32
+B[4] => Add1.IN28
+B[5] => LessThan0.IN27
+B[5] => Div0.IN31
+B[5] => Add1.IN27
+Q[0] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= cociente[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= cociente[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= cociente[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[8] <= cociente[3].DB_MAX_OUTPUT_PORT_TYPE
+Q[9] <= cociente[4].DB_MAX_OUTPUT_PORT_TYPE
+Q[10] <= cociente[5].DB_MAX_OUTPUT_PORT_TYPE
+Q[11] <= cociente[6].DB_MAX_OUTPUT_PORT_TYPE
+
+

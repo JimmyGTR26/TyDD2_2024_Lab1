@@ -1,0 +1,40 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\santi\OneDrive\Escritorio\Laboratorio 1\Parte D\simulation\modelsim
+Efour_state_mealy_state_machine
+Z1 w1730679963
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\santi\OneDrive\Escritorio\Laboratorio 1\Parte D\simulation\modelsim
+Z5 8C:/Users/santi/OneDrive/Escritorio/Laboratorio 1/Parte D/four_state_mealy_state_machine.vhd
+Z6 FC:/Users/santi/OneDrive/Escritorio/Laboratorio 1/Parte D/four_state_mealy_state_machine.vhd
+l0
+L12
+VnDo41MW1cB>QD:13HMzSV1
+!s100 F4Ik4jX`ihgXcGZASh^F22
+Z7 OV;C;10.1d;51
+31
+!i10b 1
+Z8 !s108 1730680261.927000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/santi/OneDrive/Escritorio/Laboratorio 1/Parte D/four_state_mealy_state_machine.vhd|
+Z10 !s107 C:/Users/santi/OneDrive/Escritorio/Laboratorio 1/Parte D/four_state_mealy_state_machine.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+Artl
+R2
+R3
+DEx4 work 30 four_state_mealy_state_machine 0 22 nDo41MW1cB>QD:13HMzSV1
+l32
+L24
+VY:n2_63HlWf_8CNmK9A3I0
+!s100 mf>JjARI]a`TP@FnF8e]X0
+R7
+31
+!i10b 1
+R8
+R9
+R10
+R11
+R12

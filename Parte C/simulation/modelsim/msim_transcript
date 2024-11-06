@@ -1,0 +1,101 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do 4bit_FULL_SUB_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/santi/OneDrive/Escritorio/Laboratorio 1/Parte C/FULL_SUB.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FULL_SUB
+# -- Compiling architecture behavioral of FULL_SUB
+# vcom -93 -work work {C:/Users/santi/OneDrive/Escritorio/Laboratorio 1/Parte C/D_FF.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity D_FF
+# -- Compiling architecture behavioral of D_FF
+# vcom -93 -work work {C:/Users/santi/OneDrive/Escritorio/Laboratorio 1/Parte C/4bit_FULL_SUB.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity \4bit_FULL_SUB\
+# -- Compiling architecture bdf_type of \4bit_FULL_SUB\
+# 
+# vcom -93 -work work {C:/Users/santi/OneDrive/Escritorio/Laboratorio 1/Parte C/4bit_FULL_SUB.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity \4bit_FULL_SUB\
+# -- Compiling architecture bdf_type of \4bit_FULL_SUB\
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiii -L rtl_work -L work -voptargs="+acc"  4bit_FULL_SUB
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps 4bit_FULL_SUB 
+# ** Error: (vsim-3170) Could not find 'C:/Users/santi/OneDrive/Escritorio/Laboratorio 1/Parte C/simulation/modelsim/rtl_work.4bit_FULL_SUB'.
+# 
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./4bit_FULL_SUB_run_msim_rtl_vhdl.do PAUSED at line 14
+vsim work.\\4bit_FULL_SUB\\
+# vsim work.\\4bit_FULL_SUB\\ 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.\4bit_FULL_SUB\(bdf_type)
+# Loading work.full_sub(behavioral)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.d_ff(behavioral)
+add wave -position insertpoint  \
+{sim:/\4bit_FULL_SUB\/Z}
+add wave -position insertpoint  \
+{sim:/\4bit_FULL_SUB\/clk}
+add wave -position insertpoint  \
+{sim:/\4bit_FULL_SUB\/in_A0}
+add wave -position insertpoint  \
+{sim:/\4bit_FULL_SUB\/in_A1}
+add wave -position insertpoint  \
+{sim:/\4bit_FULL_SUB\/in_A2}
+add wave -position insertpoint  \
+{sim:/\4bit_FULL_SUB\/in_A3}
+add wave -position insertpoint  \
+{sim:/\4bit_FULL_SUB\/in_B0}
+add wave -position insertpoint  \
+{sim:/\4bit_FULL_SUB\/in_B1}
+add wave -position insertpoint  \
+{sim:/\4bit_FULL_SUB\/in_B2}
+add wave -position insertpoint  \
+{sim:/\4bit_FULL_SUB\/in_B3}
+add wave -position insertpoint  \
+{sim:/\4bit_FULL_SUB\/in_bin}
+add wave -position insertpoint  \
+{sim:/\4bit_FULL_SUB\/o_bout4}
+add wave -position insertpoint  \
+{sim:/\4bit_FULL_SUB\/o_s0}
+add wave -position insertpoint  \
+{sim:/\4bit_FULL_SUB\/o_s1}
+add wave -position insertpoint  \
+{sim:/\4bit_FULL_SUB\/o_s2}
+add wave -position insertpoint  \
+{sim:/\4bit_FULL_SUB\/o_s3}
+add wave -position insertpoint  \
+{sim:/\4bit_FULL_SUB\/o_s3}
+add wave -position insertpoint  \
+{sim:/\4bit_FULL_SUB\/o_s3}
+add wave -position insertpoint  \
+{sim:/\4bit_FULL_SUB\/o_s3}
+# Can't move the Now cursor.

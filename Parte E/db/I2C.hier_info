@@ -1,0 +1,28 @@
+|I2C_Controller
+clk => state~1.DATAIN
+reset => state~3.DATAIN
+SDA => next_state.OUTPUTSELECT
+SDA => next_state.OUTPUTSELECT
+SDA => next_state.OUTPUTSELECT
+SDA => next_state.OUTPUTSELECT
+SDA => next_state.OUTPUTSELECT
+SDA => next_state.OUTPUTSELECT
+fin_dato => next_state.OUTPUTSELECT
+fin_dato => next_state.OUTPUTSELECT
+fin_dato => next_state.OUTPUTSELECT
+fin_dato => next_state.OUTPUTSELECT
+fin_dato => next_state.OUTPUTSELECT
+fin_dato => next_state.OUTPUTSELECT
+fin_dir => next_state.OUTPUTSELECT
+fin_dir => next_state.OUTPUTSELECT
+fin_dir => next_state.OUTPUTSELECT
+fin_dir => next_state.OUTPUTSELECT
+fin_dir => next_state.OUTPUTSELECT
+fin_dir => next_state.OUTPUTSELECT
+soy => next_state.DATAB
+soy => next_state.DATAB
+enable_dir <= enable_dir.DB_MAX_OUTPUT_PORT_TYPE
+enable_data <= enable_data.DB_MAX_OUTPUT_PORT_TYPE
+ack <= ack.DB_MAX_OUTPUT_PORT_TYPE
+
+
